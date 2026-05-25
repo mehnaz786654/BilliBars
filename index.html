@@ -72,26 +72,28 @@
     <main>
         <!-- Hero Section -->
        <div class="hero-banner hero-section-slide">
-        <div class="hero-bg-overlay"></div>
+        <div class="img-section mobile-hero-img">
+                <img src="assets/images/hero-banner.png"></div>
         <div class="swiper-wrapper">
             <div class="swiper-slide ">
-    <div class="container-1440">
+                <div class="img-section">
+                <img src="assets/images/hero-banner.png"></div>
         <div class="content text-center">
-              
+              <div class="">
                     <h6 class="h6">We're Truck People</h6>
                     <h1 class="h1 title">The Most Versatile <br>
                         Truck Bed Bars Available</h1>
                     <p class="large">We make high-strength aluminum crossbars that allow you to best utilize the space above your truck bed.</p>
                     
                     <a class="btn-primary" href="" title="Shop Now">shop now
-                    </a>
-    </div>
+                    </a></div>
 </div>
 </div>
  <div class="swiper-slide ">
-    <div class="container-1440">
+    <div class="img-section">
+    <img src="assets/images/hero-banner.png"></div>
         <div class="content text-center">
-              
+              <div class="">
                     <h6 class="h6">We're Truck People</h6>
                     <h1 class="h1 title">The Most Versatile <br>
                         Truck Bed Bars Available</h1>
@@ -99,7 +101,7 @@
                     
                     <a class="btn-primary" href="" title="Shop Now">shop now1
                     </a>
-    </div>
+                    </div>
 </div>
 </div>
 
@@ -708,6 +710,14 @@
     } else {
         header.classList.remove('sticky');
     }
+});
+
+//for footer accordian
+document.querySelectorAll('.accordion-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+        const content = this.nextElementSibling; 
+        this.classList.toggle('active');
+    });
 });
 
     </script>

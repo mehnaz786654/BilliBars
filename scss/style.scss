@@ -52,9 +52,8 @@
             padding: 10px 0;
     display: flex;
     white-space: nowrap;
-    animation: marquee-infinite-loop 25s linear infinite;
-           
-    }
+    p{ animation: marquee-infinite-loop 25s linear infinite;}
+           }
     
     }
     
@@ -730,6 +729,18 @@ footer {
         border-bottom: 1px solid #fff;;
     }
         .accordion-content{display:none;}
+        .accordion-toggle.active + .accordion-content {
+        display: block !important;
+    }
+    .accordion-toggle {
+        img {
+            transition: transform 0.2s ease;
+        }
+        
+        &.active img {
+            transform: rotate(180deg);
+        }
+    }
     }
     .main-footer__copyright {
     padding-top: 80px;
